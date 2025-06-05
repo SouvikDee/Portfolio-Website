@@ -1,54 +1,111 @@
 
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 
 const SkillsSection = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
   const skills = [
-    { name: 'HTML', icon: '🌐', color: 'bg-orange-500' },
-    { name: 'CSS', icon: '🎨', color: 'bg-blue-500' },
-    { name: 'JavaScript', icon: '⚡', color: 'bg-yellow-500' },
-    { name: 'React', icon: '⚛️', color: 'bg-cyan-500' },
-    { name: 'Next.js', icon: '▲', color: 'bg-black dark:bg-white' },
-    { name: 'Flutter', icon: '🦋', color: 'bg-blue-400' },
-    { name: 'Dart', icon: '🎯', color: 'bg-blue-600' },
-    { name: 'Firebase', icon: '🔥', color: 'bg-orange-400' },
-    { name: 'Node.js', icon: '🟢', color: 'bg-green-500' },
-    { name: 'MongoDB', icon: '🍃', color: 'bg-green-600' },
-    { name: 'GitHub', icon: '🐙', color: 'bg-gray-800' },
-    { name: 'TypeScript', icon: '📘', color: 'bg-blue-600' }
+    { name: 'HTML', icon: '🌐', color: 'bg-gradient-to-br from-orange-400 to-orange-600', proficiency: 95 },
+    { name: 'CSS', icon: '🎨', color: 'bg-gradient-to-br from-blue-400 to-blue-600', proficiency: 90 },
+    { name: 'JavaScript', icon: '⚡', color: 'bg-gradient-to-br from-yellow-400 to-yellow-600', proficiency: 88 },
+    { name: 'React', icon: '⚛️', color: 'bg-gradient-to-br from-cyan-400 to-cyan-600', proficiency: 92 },
+    { name: 'Next.js', icon: '▲', color: 'bg-gradient-to-br from-gray-700 to-gray-900', proficiency: 85 },
+    { name: 'Flutter', icon: '🦋', color: 'bg-gradient-to-br from-blue-400 to-blue-500', proficiency: 87 },
+    { name: 'Dart', icon: '🎯', color: 'bg-gradient-to-br from-blue-500 to-blue-700', proficiency: 83 },
+    { name: 'Firebase', icon: '🔥', color: 'bg-gradient-to-br from-orange-400 to-red-500', proficiency: 80 },
+    { name: 'Node.js', icon: '🟢', color: 'bg-gradient-to-br from-green-400 to-green-600', proficiency: 85 },
+    { name: 'MongoDB', icon: '🍃', color: 'bg-gradient-to-br from-green-500 to-green-700', proficiency: 78 },
+    { name: 'GitHub', icon: '🐙', color: 'bg-gradient-to-br from-gray-600 to-gray-800', proficiency: 90 },
+    { name: 'TypeScript', icon: '📘', color: 'bg-gradient-to-br from-blue-500 to-blue-700', proficiency: 82 }
   ];
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section id="skills" className="py-20 bg-gray-50 dark:bg-gray-900">
-      <div className="container mx-auto px-6">
+    <section ref={sectionRef} id="skills" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-900 dark:to-gray-800 relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-10 left-10 w-20 h-20 bg-blue-300 rounded-full blur-xl"></div>
+        <div className="absolute bottom-10 right-10 w-32 h-32 bg-purple-300 rounded-full blur-xl"></div>
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-16">
-            Skills & Technologies
-          </h2>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
+              Skills & Technologies
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
+          </div>
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {skills.map((skill, index) => (
               <div
                 key={skill.name}
-                className="group bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer border border-gray-200 dark:border-gray-700"
-                style={{ animationDelay: `${index * 100}ms` }}
+                className={`group relative bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer border border-gray-200 dark:border-gray-700 overflow-hidden ${
+                  isVisible ? 'animate-fade-in opacity-100' : 'opacity-0'
+                }`}
+                style={{ 
+                  animationDelay: `${index * 100}ms`,
+                  transform: isVisible ? 'translateY(0)' : 'translateY(20px)'
+                }}
               >
-                <div className="text-center">
-                  <div className={`w-16 h-16 ${skill.color} rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                    <span className="text-2xl">{skill.icon}</span>
+                {/* Hover gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                
+                <div className="relative text-center">
+                  <div className={`w-16 h-16 ${skill.color} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                    <span className="text-2xl filter drop-shadow-sm">{skill.icon}</span>
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors mb-2">
                     {skill.name}
                   </h3>
+                  
+                  {/* Proficiency bar */}
+                  <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mb-2">
+                    <div 
+                      className="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full transition-all duration-1000 ease-out"
+                      style={{ 
+                        width: isVisible ? `${skill.proficiency}%` : '0%',
+                        transitionDelay: `${index * 100 + 500}ms`
+                      }}
+                    ></div>
+                  </div>
+                  
+                  <span className="text-sm text-gray-500 dark:text-gray-400 font-medium">
+                    {skill.proficiency}%
+                  </span>
                 </div>
               </div>
             ))}
           </div>
           
           <div className="mt-16 text-center">
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Always learning and adapting to new technologies. Currently exploring 
-              AI/ML integration, cloud architecture, and advanced mobile development patterns.
-            </p>
+            <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700">
+              <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                Always learning and adapting to new technologies. Currently exploring 
+                <span className="text-blue-600 dark:text-blue-400 font-semibold"> AI/ML integration</span>, 
+                <span className="text-purple-600 dark:text-purple-400 font-semibold"> cloud architecture</span>, and 
+                <span className="text-indigo-600 dark:text-indigo-400 font-semibold"> advanced mobile development patterns</span>.
+              </p>
+            </div>
           </div>
         </div>
       </div>
