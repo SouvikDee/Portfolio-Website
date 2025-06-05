@@ -30,101 +30,78 @@ const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="max-w-5xl mx-auto">
-          {/* Enhanced badge */}
-          <div className="flex justify-center mb-8">
-            <div className="relative">
-              <div className="flex items-center gap-2 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md border border-white/20 dark:border-gray-700/50 rounded-full px-6 py-3 shadow-lg">
-                <Sparkles className="w-5 h-5 text-blue-500 animate-pulse" />
-                <span className="text-sm font-medium bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  Available for hire
-                </span>
-                <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-              </div>
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-full blur opacity-75 animate-pulse"></div>
-            </div>
+        <div className="max-w-4xl mx-auto">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-2 mb-8 animate-fade-in">
+            <Sparkles className="w-4 h-4 text-blue-400" />
+            <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Available for hire</span>
+            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
           </div>
           
-          {/* Main heading with enhanced styling */}
-          <div className="relative mb-8">
-            <h1 className="text-7xl md:text-9xl font-black bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 dark:from-white dark:via-blue-100 dark:to-purple-100 bg-clip-text text-transparent mb-4 animate-fade-in leading-tight">
+          {/* Main heading - reverted to previous style */}
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 animate-fade-in leading-tight">
+            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
               Souvik De
-            </h1>
-            
-            {/* Floating icons around the name */}
-            <div className="absolute -top-4 -left-4 opacity-60">
-              <Code className="w-8 h-8 text-blue-500 animate-float" />
+            </span>
+          </h1>
+          
+          {/* Subtitle - reverted to previous style */}
+          <h2 className="text-2xl md:text-4xl font-semibold text-gray-700 dark:text-gray-200 mb-6 animate-fade-in delay-150">
+            App & Web Developer
+          </h2>
+          
+          {/* Professional badges */}
+          <div className="flex flex-wrap justify-center gap-4 mb-8 animate-fade-in delay-300">
+            <div className="bg-gradient-to-r from-green-500 to-emerald-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+              Agricultural Engineer ✨
             </div>
-            <div className="absolute -top-2 -right-8 opacity-60">
-              <Palette className="w-6 h-6 text-purple-500 animate-bounce" />
-            </div>
-            <div className="absolute -bottom-4 left-1/4 opacity-60">
-              <Zap className="w-7 h-7 text-yellow-500 animate-pulse" />
+            <div className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+              GATE AIR 79 🏆
             </div>
           </div>
           
-          {/* Enhanced subtitle with typing effect simulation */}
-          <div className="relative mb-8">
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-800 dark:text-gray-100 mb-4 animate-fade-in delay-150">
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                App & Web Developer
-              </span>
-            </h2>
-            
-            {/* Professional badges */}
-            <div className="flex flex-wrap justify-center gap-4 mb-6">
-              <div className="bg-gradient-to-r from-green-500 to-emerald-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg animate-fade-in delay-300">
-                Agricultural Engineer ✨
-              </div>
-              <div className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg animate-fade-in delay-500">
-                GATE AIR 79 🏆
-              </div>
-            </div>
-          </div>
-          
-          {/* Enhanced description */}
-          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-12 max-w-4xl mx-auto animate-fade-in delay-300 leading-relaxed">
-            Crafting <span className="font-bold text-blue-600 dark:text-blue-400">innovative digital solutions</span> that bridge technology and agriculture, 
-            creating <span className="font-bold text-purple-600 dark:text-purple-400">scalable applications</span> that solve real-world problems
+          {/* Description - reverted to previous style */}
+          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto animate-fade-in delay-500 leading-relaxed">
+            Crafting innovative digital solutions that bridge technology and agriculture, 
+            creating scalable applications that solve real-world problems
           </p>
           
           {/* Enhanced buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in delay-500 mb-16">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in delay-700 mb-16">
             <button
               onClick={scrollToProjects}
-              className="group relative px-10 py-5 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 hover:from-blue-700 hover:via-purple-700 hover:to-blue-900 text-white rounded-2xl font-bold transition-all duration-500 hover:scale-105 shadow-2xl hover:shadow-blue-500/25 overflow-hidden transform hover:-translate-y-1"
+              className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 hover:from-blue-700 hover:via-purple-700 hover:to-blue-900 text-white rounded-xl font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-blue-500/25 overflow-hidden"
             >
               <span className="relative z-10 flex items-center gap-2">
                 <Sparkles className="w-5 h-5" />
                 Explore My Work
               </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="absolute inset-0 bg-white/20 group-hover:bg-white/30 transition-colors duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
             
             <button
               onClick={scrollToContact}
-              className="group relative px-10 py-5 border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 rounded-2xl font-bold transition-all duration-500 hover:scale-105 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm hover:shadow-2xl hover:shadow-blue-500/25 overflow-hidden transform hover:-translate-y-1"
+              className="group relative px-8 py-4 border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 rounded-xl font-semibold transition-all duration-300 hover:scale-105 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm hover:shadow-lg hover:shadow-blue-500/25 overflow-hidden"
             >
               <span className="relative z-10 group-hover:text-white transition-colors duration-300 flex items-center gap-2">
                 <Zap className="w-5 h-5" />
                 Let's Connect
               </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
             </button>
           </div>
           
           {/* Stats section */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto mb-16 animate-fade-in delay-700">
-            <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-white/20 dark:border-gray-700/50 hover:scale-105 transition-transform duration-300">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto animate-fade-in delay-700">
+            <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/20 dark:border-gray-700/50 hover:scale-105 transition-transform duration-300">
               <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">5+</div>
               <div className="text-gray-600 dark:text-gray-300 font-medium">Projects Completed</div>
             </div>
-            <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-white/20 dark:border-gray-700/50 hover:scale-105 transition-transform duration-300">
+            <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/20 dark:border-gray-700/50 hover:scale-105 transition-transform duration-300">
               <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">3+</div>
               <div className="text-gray-600 dark:text-gray-300 font-medium">Years Experience</div>
             </div>
-            <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-white/20 dark:border-gray-700/50 hover:scale-105 transition-transform duration-300">
+            <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/20 dark:border-gray-700/50 hover:scale-105 transition-transform duration-300">
               <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">10+</div>
               <div className="text-gray-600 dark:text-gray-300 font-medium">Technologies</div>
             </div>
