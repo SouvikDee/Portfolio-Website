@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Github } from 'lucide-react';
 import ProjectCard from './ProjectCard';
@@ -11,7 +10,7 @@ const ProjectsSection = () => {
       techStack: ["React-Native", "JavaScript", "SQLite", "Figma",],
       liveUrl: "https://github.com/SouvikDee/UBKV-CART",
       githubUrl: "https://github.com/SouvikDee/UBKV-CART",
-      image: "/src/assets/logo.png"
+      image: "/images/projects/logo.png"
     },
     {
       title: "Avijo: The Health Care App",
@@ -19,7 +18,7 @@ const ProjectsSection = () => {
       techStack: ["React-Native", "JavaScript", "Firebase", "Figma","socket.io","Node.js"],
       liveUrl: "https://play.google.com/store/apps/details?id=com.randomcompany.mynewapp",
       githubUrl: "https://github.com/SouvikDee/Avijo-User",
-      image: "/src/assets/avijo.jpg"
+      image: "/images/projects/avijo.jpg"
     },
     {
       title: "SceneHack",

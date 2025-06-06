@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Heart } from 'lucide-react';
 
@@ -18,9 +19,6 @@ const Footer = () => {
             </p>
             <p className="text-gray-500 text-sm mt-2">
               © 2024 Souvik De. All rights reserved.
-            </p>
-            <p className="text-gray-400 text-xs mt-4">
-              Animated icons by <a href="https://www.flaticon.com/" className="underline" target="_blank" rel="noopener noreferrer">Flaticon</a>
             </p>
           </div>
         </div>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const AboutSection = () => {
@@ -38,8 +37,8 @@ const AboutSection = () => {
                 <div className="w-80 h-80 rounded-full bg-gradient-to-br from-blue-400 to-purple-600 p-1">
                   <div className="w-full h-full rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
                     <img
-                      src="./src/assets/profile.jpeg"
-                      alt="Souvik De"
+                      src="/images/profile/profile.jpeg"
+                      alt="Profile picture of Souvik De"
                       className="w-full h-full rounded-full object-cover"
                     />
                   </div>
