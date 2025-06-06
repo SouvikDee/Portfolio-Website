@@ -13,14 +13,14 @@ const AboutSection = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                I'm a passionate full-stack developer with 4+ years of experience creating 
+                I'm a passionate front-end developer with 6+ months of experience creating 
                 innovative mobile applications and web solutions. My journey combines my 
                 background in Agricultural Engineering with cutting-edge technology to 
                 build digital products that make a real impact.
               </p>
               
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                I specialize in React, Flutter, and Node.js, focusing on clean code, 
+                I specialize in React-Native, JavaScript, focusing on clean code, 
                 scalable architecture, and exceptional user experiences. Whether it's 
                 a mobile app or a complex web platform, I love turning ideas into 
                 reality through thoughtful design and robust development.
@@ -38,7 +38,7 @@ const AboutSection = () => {
                 <div className="w-80 h-80 rounded-full bg-gradient-to-br from-blue-400 to-purple-600 p-1">
                   <div className="w-full h-full rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
                     <img
-                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                      src="./src/assets/profile.jpeg"
                       alt="Souvik De"
                       className="w-full h-full rounded-full object-cover"
                     />

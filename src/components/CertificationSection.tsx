@@ -5,37 +5,37 @@ import { Award, ExternalLink, Calendar } from 'lucide-react';
 const CertificationSection = () => {
   const certifications = [
     {
-      title: "Full Stack Web Development",
+      title: "Introduction to Front-End Development",
       issuer: "Meta",
       date: "2023",
-      credentialId: "FSW2023001",
-      skills: ["React", "Node.js", "Database Design"],
-      link: "#"
+      credentialId: "UML4UMC85YQ7",
+      skills: ["HTML", "CSS", "JavaScript","Bootstrap","React"],
+      link: "https://www.coursera.org/account/accomplishments/verify/UML4UMC85YQ7"
     },
     {
-      title: "Flutter Development",
-      issuer: "Google",
+      title: "JavaScript",
+      issuer: "Udemy",
       date: "2023",
-      credentialId: "FLT2023002",
-      skills: ["Flutter", "Dart", "Mobile Development"],
-      link: "#"
+      credentialId: "UC-7a0fbff2-50d8-42dd-97b4-86d873c6a865",
+      skills: ["JavaScript","ES6","DOM","jQuery","API"],
+      link: "ude.my/UC-7a0fbff2-50d8-42dd-97b4-86d873c6a865"
     },
     {
-      title: "Agricultural Technology Innovation",
-      issuer: "ICAR",
+      title: "Problem Solving Through Programming in C",
+      issuer: "NPTEL",
       date: "2022",
-      credentialId: "ATI2022003",
-      skills: ["AgTech", "IoT", "Data Analysis"],
-      link: "#"
+      credentialId: "1uVc6kPypJl7XIiJRh8eyCnj6IR1p6UOz",
+      skills: ["C","Problem Solving"],
+      link: "https://drive.google.com/file/d/1uVc6kPypJl7XIiJRh8eyCnj6IR1p6UOz/view?usp=sharing",
     },
-    {
-      title: "Cloud Computing Fundamentals",
-      issuer: "AWS",
-      date: "2023",
-      credentialId: "CCF2023004",
-      skills: ["AWS", "Cloud Architecture", "DevOps"],
-      link: "#"
-    }
+    // {
+    //   title: "Cloud Computing Fundamentals",
+    //   issuer: "AWS",
+    //   date: "2023",
+    //   credentialId: "CCF2023004",
+    //   skills: ["AWS", "Cloud Architecture", "DevOps"],
+    //   link: "#"
+    // }
   ];
 
   return (

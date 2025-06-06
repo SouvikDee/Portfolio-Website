@@ -6,53 +6,53 @@ import ProjectCard from './ProjectCard';
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "AgriTrack Mobile App",
-      description: "A Flutter-based mobile application for farmers to track crop health, weather patterns, and optimize farming decisions using IoT sensors and AI predictions.",
-      techStack: ["Flutter", "Dart", "Firebase", "Node.js", "AI/ML"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=300&fit=crop"
+      title: "UBKV-CART",
+      description: "A React-Native based mobile application for farmers to connect with consumers directly and sell their productsa at the price they wanted.",
+      techStack: ["React-Native", "JavaScript", "SQLite", "Figma",],
+      liveUrl: "https://github.com/SouvikDee/UBKV-CART",
+      githubUrl: "https://github.com/SouvikDee/UBKV-CART",
+      image: "/src/assets/logo.png"
     },
     {
-      title: "E-Commerce Dashboard",
-      description: "A comprehensive React-based admin dashboard for e-commerce platforms with real-time analytics, inventory management, and sales tracking.",
-      techStack: ["React", "TypeScript", "Next.js", "MongoDB", "Recharts"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=300&fit=crop"
+      title: "Avijo: The Health Care App",
+      description: "A comprehensive React-Native based health care app with real-time analytics, inventory management, and sales tracking.",
+      techStack: ["React-Native", "JavaScript", "Firebase", "Figma","socket.io","Node.js"],
+      liveUrl: "https://play.google.com/store/apps/details?id=com.randomcompany.mynewapp",
+      githubUrl: "https://github.com/SouvikDee/Avijo-User",
+      image: "/src/assets/avijo.jpg"
     },
     {
-      title: "Smart Irrigation System",
-      description: "IoT-powered web platform that automates irrigation scheduling based on soil moisture, weather data, and crop requirements for optimal water usage.",
-      techStack: ["React", "Node.js", "MongoDB", "IoT", "AWS"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=300&fit=crop"
+      title: "SceneHack",
+      description: "AI powered app for designing interior and exterior of a house",
+      techStack: ["React-Native", "JavaScript", "Figma","Node.js"],
+      liveUrl: "",
+      githubUrl: "",
+      image: ""
     },
-    {
-      title: "Task Management App",
-      description: "Cross-platform mobile app built with Flutter for team collaboration, project tracking, and productivity enhancement with real-time synchronization.",
-      techStack: ["Flutter", "Firebase", "Dart", "Cloud Functions"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=600&h=300&fit=crop"
-    },
-    {
-      title: "Weather Analytics Platform",
-      description: "Web application providing detailed weather analytics and forecasting for agricultural planning with interactive data visualizations and historical trends.",
-      techStack: ["React", "D3.js", "Node.js", "PostgreSQL", "Weather APIs"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=300&fit=crop"
-    },
-    {
-      title: "Portfolio Website Builder",
-      description: "A drag-and-drop website builder specifically designed for developers and creatives to showcase their work with customizable themes and responsive design.",
-      techStack: ["Next.js", "TypeScript", "Tailwind", "Supabase"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=300&fit=crop"
-    }
+    // {
+    //   title: "Task Management App",
+    //   description: "Cross-platform mobile app built with Flutter for team collaboration, project tracking, and productivity enhancement with real-time synchronization.",
+    //   techStack: ["Flutter", "Firebase", "Dart", "Cloud Functions"],
+    //   liveUrl: "https://example.com",
+    //   githubUrl: "https://github.com",
+    //   image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=600&h=300&fit=crop"
+    // },
+    // {
+    //   title: "Weather Analytics Platform",
+    //   description: "Web application providing detailed weather analytics and forecasting for agricultural planning with interactive data visualizations and historical trends.",
+    //   techStack: ["React", "D3.js", "Node.js", "PostgreSQL", "Weather APIs"],
+    //   liveUrl: "https://example.com",
+    //   githubUrl: "https://github.com",
+    //   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=300&fit=crop"
+    // },
+    // {
+    //   title: "Portfolio Website Builder",
+    //   description: "A drag-and-drop website builder specifically designed for developers and creatives to showcase their work with customizable themes and responsive design.",
+    //   techStack: ["Next.js", "TypeScript", "Tailwind", "Supabase"],
+    //   liveUrl: "https://example.com",
+    //   githubUrl: "https://github.com",
+    //   image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=300&fit=crop"
+    // }
   ];
 
   return (

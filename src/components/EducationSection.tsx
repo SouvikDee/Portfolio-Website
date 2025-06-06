@@ -6,31 +6,44 @@ const EducationSection = () => {
   const education = [
     {
       degree: "B.Tech in Agricultural Engineering",
-      institution: "Indian Institute of Technology (IIT)",
-      location: "Delhi, India",
-      duration: "2017 - 2021",
-      grade: "CGPA: 8.7/10",
+      institution: "Uttar Banga Krishi Viswavidyalaya",
+      location: "West Bengal, India",
+      duration: "2021 - 2025",
+      grade: "CGPA: 7.8/10",
       achievements: [
         "GATE AIR 79 - Agricultural Engineering",
-        "Dean's List for 3 consecutive semesters",
-        "Winner of Inter-IIT Tech Meet 2020",
-        "Published 2 research papers in AgriTech"
+        "Top 5 Student in the Department",
+        "Team Lead of the only team to join Smart India Hackathon 2024",
+        "Developed a mobile app to connect farmers with the consumers directly"
       ],
-      coursework: ["Agricultural Machinery", "Precision Agriculture", "IoT in Agriculture", "Data Analytics", "Software Engineering"]
+      coursework: ["Soil & Water Conservation Engineering", "Irrigation & Drainage Engineering", "Processing and Food Engineering", "Farm Machinery", "Software Engineering"]
     },
     {
       degree: "Higher Secondary Education",
-      institution: "Delhi Public School",
-      location: "New Delhi, India",
-      duration: "2015 - 2017",
-      grade: "95.2%",
+      institution: "Ramakrishna Vivekananda Mission Vidyabhawan",
+      location: "West Bengal, India",
+      duration: "2019 - 2021",
+      grade: "90.2%",
       achievements: [
-        "School Topper in Mathematics and Physics",
-        "National Science Olympiad Gold Medal",
-        "Head of Technology Club",
-        "Best Student Award 2017"
+        "Head of the Class",
+        "Top 5 Student in the School",
+        
       ],
-      coursework: ["Physics", "Chemistry", "Mathematics", "Computer Science", "English"]
+      coursework: ["Physics", "Chemistry", "Mathematics", "Biology", "English","Bengali"]
+    },
+    {
+      degree: "Secondary Education",
+      institution: "Ramakrishna Vivekananda Mission Vidyabhawan",
+      location: "West Bengal, India",
+      duration: "2017-2019",
+      grade: "94%",
+      achievements: [
+        "Head of the Class",
+        "Top 10 Student in the School",
+        "School Topper in Mathematics",
+        
+      ],
+      coursework: ["Physical Science", "Life Science", "Mathematics", "History","Geography", "English","Bengali"]
     }
   ];
 
@@ -66,7 +79,7 @@ const EducationSection = () => {
                   All India Rank 79
                 </p>
                 <p className="text-lg text-gray-600 dark:text-gray-300">
-                  Agricultural Engineering • Top 0.1% of candidates
+                  Agricultural Engineering
                 </p>
                 <div className="flex justify-center mt-4">
                   {[...Array(5)].map((_, i) => (

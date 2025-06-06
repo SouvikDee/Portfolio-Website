@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect, useState } from 'react';
 
 const SkillsSection = () => {
@@ -6,18 +5,25 @@ const SkillsSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
 
   const skills = [
-    { name: 'HTML', icon: '🌐', color: 'bg-gradient-to-br from-orange-400 to-orange-600', proficiency: 95 },
-    { name: 'CSS', icon: '🎨', color: 'bg-gradient-to-br from-blue-400 to-blue-600', proficiency: 90 },
-    { name: 'JavaScript', icon: '⚡', color: 'bg-gradient-to-br from-yellow-400 to-yellow-600', proficiency: 88 },
-    { name: 'React', icon: '⚛️', color: 'bg-gradient-to-br from-cyan-400 to-cyan-600', proficiency: 92 },
-    { name: 'Next.js', icon: '▲', color: 'bg-gradient-to-br from-gray-700 to-gray-900', proficiency: 85 },
-    { name: 'Flutter', icon: '🦋', color: 'bg-gradient-to-br from-blue-400 to-blue-500', proficiency: 87 },
-    { name: 'Dart', icon: '🎯', color: 'bg-gradient-to-br from-blue-500 to-blue-700', proficiency: 83 },
-    { name: 'Firebase', icon: '🔥', color: 'bg-gradient-to-br from-orange-400 to-red-500', proficiency: 80 },
-    { name: 'Node.js', icon: '🟢', color: 'bg-gradient-to-br from-green-400 to-green-600', proficiency: 85 },
-    { name: 'MongoDB', icon: '🍃', color: 'bg-gradient-to-br from-green-500 to-green-700', proficiency: 78 },
-    { name: 'GitHub', icon: '🐙', color: 'bg-gradient-to-br from-gray-600 to-gray-800', proficiency: 90 },
-    { name: 'TypeScript', icon: '📘', color: 'bg-gradient-to-br from-blue-500 to-blue-700', proficiency: 82 }
+    { name: 'HTML', icon: '/src/assets/html.gif', type: 'img', color: 'bg-gradient-to-br from-orange-400 to-orange-600', proficiency: 90 },
+    { name: 'CSS', icon: '/src/assets/coding.gif', type: 'img', color: 'bg-gradient-to-br from-blue-400 to-blue-600', proficiency: 85 },
+    { name: 'JavaScript', icon: '/src/assets/java-script.png', type: 'img', color: 'bg-gradient-to-br from-yellow-400 to-yellow-600', proficiency: 75 },
+    { name: 'React Native', icon: '⚛️', type: 'emoji', color: 'bg-gradient-to-br from-cyan-400 to-cyan-600', proficiency: 75 },
+    // { name: 'Next.js', icon: '▲', color: 'bg-gradient-to-br from-gray-700 to-gray-900', proficiency: 85 },
+    // { name: 'Flutter', icon: '🦋', color: 'bg-gradient-to-br from-blue-400 to-blue-500', proficiency: 87 },
+    // { name: 'Dart', icon: '🎯', color: 'bg-gradient-to-br from-blue-500 to-blue-700', proficiency: 83 },
+    // { name: 'Firebase', icon: '🔥', color: 'bg-gradient-to-br from-orange-400 to-red-500', proficiency: 80 },
+    // { name: 'Node.js', icon: '🟢', color: 'bg-gradient-to-br from-green-400 to-green-600', proficiency: 85 },
+    // { name: 'MongoDB', icon: '🍃', color: 'bg-gradient-to-br from-green-500 to-green-700', proficiency: 78 },
+    { name: 'GitHub', icon: '/src/assets/git.jpeg', type: 'img', color: 'bg-gradient-to-br from-gray-600 to-gray-800', proficiency: 90 },
+    { name: 'TypeScript', icon: '/src/assets/typescript.png', type: 'img', color: 'bg-gradient-to-br from-blue-500 to-blue-700', proficiency: 70 },
+    { name: 'C', icon: '/src/assets/letter-c.gif', type: 'img', color: 'bg-gradient-to-br from-blue-500 to-blue-700', proficiency: 90 },
+    { name: 'Python', icon: '/src/assets/python.png', type: 'img', color: 'bg-gradient-to-br from-blue-500 to-blue-700', proficiency: 60 },
+    { name: 'SQLite', icon: '/src/assets/sqlite1.png', type: 'img', color: 'bg-gradient-to-br from-blue-500 to-blue-700', proficiency: 60 },
+    { name: 'AutoCAD', icon: '/src/assets/dwg.png', type: 'img', color: 'bg-gradient-to-br from-blue-500 to-blue-700', proficiency: 40 },
+    { name: 'PowerBI', icon: '/src/assets/Power-BI.png', type: 'img', color: 'bg-gradient-to-br from-blue-500 to-blue-700', proficiency: 70 },
+    { name: 'Postman', icon: '/src/assets/postman.jpg', type: 'img', color: 'bg-gradient-to-br from-blue-500 to-blue-700', proficiency: 80 },
+    { name: 'Android Studio', icon: '/src/assets/androidstudio.png', type: 'img', color: 'bg-gradient-to-br from-blue-500 to-blue-700', proficiency: 80 },
   ];
 
   useEffect(() => {
@@ -71,7 +77,11 @@ const SkillsSection = () => {
                 
                 <div className="relative text-center">
                   <div className={`w-16 h-16 ${skill.color} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                    <span className="text-2xl filter drop-shadow-sm">{skill.icon}</span>
+                    {skill.type === 'img' ? (
+                      <img src={skill.icon} alt={skill.name + ' icon'} className="w-10 h-10 mx-auto" />
+                    ) : (
+                      <span className="text-2xl filter drop-shadow-sm">{skill.icon}</span>
+                    )}
                   </div>
                   
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors mb-2">

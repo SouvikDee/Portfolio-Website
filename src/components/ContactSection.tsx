@@ -48,16 +48,16 @@ const ContactSection = () => {
       url: 'https://linkedin.com',
       color: 'hover:text-blue-600'
     },
-    {
-      name: 'Twitter',
-      icon: Twitter,
-      url: 'https://twitter.com',
-      color: 'hover:text-blue-400'
-    },
+    // {
+    //   name: 'Twitter',
+    //   icon: Twitter,
+    //   url: 'https://twitter.com',
+    //   color: 'hover:text-blue-400'
+    // },
     {
       name: 'Email',
       icon: Mail,
-      url: 'mailto:souvik@example.com',
+      url: 'mailto:souvikde.arup@gmail.com',
       color: 'hover:text-red-500'
     }
   ];

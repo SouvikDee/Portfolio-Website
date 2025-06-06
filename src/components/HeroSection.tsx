@@ -94,12 +94,12 @@ const HeroSection = () => {
           {/* Stats section */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto animate-fade-in delay-700">
             <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/20 dark:border-gray-700/50 hover:scale-105 transition-transform duration-300">
-              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">5+</div>
+              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">3+</div>
               <div className="text-gray-600 dark:text-gray-300 font-medium">Projects Completed</div>
             </div>
             <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/20 dark:border-gray-700/50 hover:scale-105 transition-transform duration-300">
-              <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">3+</div>
-              <div className="text-gray-600 dark:text-gray-300 font-medium">Years Experience</div>
+              <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">6+</div>
+              <div className="text-gray-600 dark:text-gray-300 font-medium">Months of Experience</div>
             </div>
             <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/20 dark:border-gray-700/50 hover:scale-105 transition-transform duration-300">
               <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">10+</div>

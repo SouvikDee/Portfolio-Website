@@ -5,61 +5,62 @@ import { Briefcase, MapPin, Calendar } from 'lucide-react';
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Senior Full Stack Developer",
-      company: "TechInnovate Solutions",
+      title: "React Native Developer",
+      company: "Avijo",
       location: "Remote",
-      duration: "2023 - Present",
+      duration: "2025 - Present",
       type: "Full-time",
-      description: "Leading development of scalable web applications using React, Node.js, and cloud technologies. Mentoring junior developers and implementing best practices for code quality and performance.",
+      description: "Leading development of scalable mobile applications using React Native, JavaScript, Expo and Rest API. Implementing best practices for code quality and performance.",
       achievements: [
         "Increased application performance by 40% through optimization",
-        "Led a team of 5 developers on multiple projects",
-        "Implemented CI/CD pipelines reducing deployment time by 60%"
+        "Led a team of 4 developers on multiple projects",
+        "Implemented CI/CD pipelines reducing deployment time by 60%",
+        "Deployed 2 apps on the play store"
       ],
-      skills: ["React", "Node.js", "AWS", "TypeScript", "PostgreSQL"]
+      skills: ["React Native", "JavaScript", "Firebase", "TypeScript", "Figma"]
     },
-    {
-      title: "Mobile App Developer",
-      company: "AgriTech Innovations",
-      location: "Bangalore, India",
-      duration: "2022 - 2023",
-      type: "Full-time",
-      description: "Developed mobile applications for agricultural management using Flutter and Firebase. Created solutions that help farmers optimize crop yield and manage resources efficiently.",
-      achievements: [
-        "Built 3 mobile apps with 10k+ downloads each",
-        "Reduced development time by 30% with reusable components",
-        "Integrated IoT sensors for real-time crop monitoring"
-      ],
-      skills: ["Flutter", "Firebase", "IoT", "Dart", "REST APIs"]
-    },
-    {
-      title: "Frontend Developer",
-      company: "StartupHub",
-      location: "Delhi, India",
-      duration: "2021 - 2022",
-      type: "Full-time",
-      description: "Developed responsive web applications for various startups. Collaborated with designers and backend developers to create seamless user experiences.",
-      achievements: [
-        "Delivered 8+ projects on time and within budget",
-        "Improved user engagement by 50% through UX improvements",
-        "Established component library used across multiple projects"
-      ],
-      skills: ["React", "JavaScript", "CSS3", "Figma", "Git"]
-    },
-    {
-      title: "Agricultural Technology Intern",
-      company: "Rural Innovation Lab",
-      location: "Mumbai, India",
-      duration: "2020 - 2021",
-      type: "Internship",
-      description: "Worked on developing digital solutions for rural communities. Focused on creating technology that bridges the gap between traditional farming and modern agricultural practices.",
-      achievements: [
-        "Developed prototype for crop disease detection app",
-        "Conducted field research with 50+ farmers",
-        "Presented findings at National AgriTech Conference"
-      ],
-      skills: ["Python", "Machine Learning", "Data Analysis", "Research"]
-    }
+    // {
+    //   title: "Mobile App Developer",
+    //   company: "AgriTech Innovations",
+    //   location: "Bangalore, India",
+    //   duration: "2022 - 2023",
+    //   type: "Full-time",
+    //   description: "Developed mobile applications for agricultural management using Flutter and Firebase. Created solutions that help farmers optimize crop yield and manage resources efficiently.",
+    //   achievements: [
+    //     "Built 3 mobile apps with 10k+ downloads each",
+    //     "Reduced development time by 30% with reusable components",
+    //     "Integrated IoT sensors for real-time crop monitoring"
+    //   ],
+    //   skills: ["Flutter", "Firebase", "IoT", "Dart", "REST APIs"]
+    // },
+    // {
+    //   title: "Frontend Developer",
+    //   company: "StartupHub",
+    //   location: "Delhi, India",
+    //   duration: "2021 - 2022",
+    //   type: "Full-time",
+    //   description: "Developed responsive web applications for various startups. Collaborated with designers and backend developers to create seamless user experiences.",
+    //   achievements: [
+    //     "Delivered 8+ projects on time and within budget",
+    //     "Improved user engagement by 50% through UX improvements",
+    //     "Established component library used across multiple projects"
+    //   ],
+    //   skills: ["React", "JavaScript", "CSS3", "Figma", "Git"]
+    // },
+    // {
+    //   title: "Agricultural Technology Intern",
+    //   company: "Rural Innovation Lab",
+    //   location: "Mumbai, India",
+    //   duration: "2020 - 2021",
+    //   type: "Internship",
+    //   description: "Worked on developing digital solutions for rural communities. Focused on creating technology that bridges the gap between traditional farming and modern agricultural practices.",
+    //   achievements: [
+    //     "Developed prototype for crop disease detection app",
+    //     "Conducted field research with 50+ farmers",
+    //     "Presented findings at National AgriTech Conference"
+    //   ],
+    //   skills: ["Python", "Machine Learning", "Data Analysis", "Research"]
+    // }
   ];
 
   return (
@@ -76,7 +77,7 @@ const ExperienceSection = () => {
               Experience
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              4+ years of professional experience building innovative solutions
+              6+ months of professional experience building innovative solutions
             </p>
           </div>
 
