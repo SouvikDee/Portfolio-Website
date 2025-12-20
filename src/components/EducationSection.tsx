@@ -9,7 +9,7 @@ const EducationSection = () => {
       institution: "Uttar Banga Krishi Viswavidyalaya",
       location: "West Bengal, India",
       duration: "2021 - 2025",
-      grade: "CGPA: 7.8/10",
+      grade: "CGPA: 8.02/10",
       achievements: [
         "GATE AIR 79 - Agricultural Engineering",
         "Top 5 Student in the Department",
